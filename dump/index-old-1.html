@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React-CDN</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- <script>console.log(111, React) console.log(222, ReactDOM) ReactDOM.render(React.createElement('ol', null, React.createElement('li', null, React.createElement('h4', null, 'Mango'), React.createElement('h4', null, 'Limón')), React.createElement('li', null, 'Pera'), React.createElement('li', null, 'Banana'), React.createElement('li', null, 'Piña')), document .getElementById('root')) </script>-->
+    <!-- <script type="text/babel"><div><ul><li>Manzana</li><li>Pera</li><li>Mango</li></ul></div>,
+document.getElementById('root')) </script>-->
+    <script type="text/babel">
+      // class Saludo extends React.Component {
+      //   render() {
+      //     return (
+      //       <ul>
+      //         <li>Manzana</li>
+      //         <li>Pera</li>
+      //         <li>Banana</li>
+      //         <li>Uva</li>
+      //       </ul>
+      //     );
+      //   }
+      // }
+
+      const Saludo = () => {
+        return (
+          <ol>
+            <li>Manzana</li>
+            <li>Pera</li>
+            <li>Banana</li>
+            <li>Uva</li>
+          </ol>
+        );
+      };
+      ReactDOM.render(<Saludo />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
